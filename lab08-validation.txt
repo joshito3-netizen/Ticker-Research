@@ -43,3 +43,4 @@ Reverse DCF
 Target share price: $491.65
 Solved uniform shift to Years 1–5 growth: +20.74%
 Held fixed: starting FCFF, WACC, terminal growth, non-operating cash, debt, diluted shares, and the five-year forecast horizon.
+AI was used to create this
