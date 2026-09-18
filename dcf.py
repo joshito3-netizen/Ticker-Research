@@ -1,4 +1,12 @@
-"""Five-year FCFF DCF model for Microsoft (USD millions, except per-share value)."""
+"""Five-year Microsoft FCFF DCF, restored from the saved Week 3 GitHub model.
+
+Comparison date: 2026-09-09. USD millions except per-share values.
+Historical inputs: FY2026 results published 2026-07-29.
+Sources and modeling limitations: lab06-microsoft.md and lab08-microsoft.md.
+Growth, WACC, and terminal growth are assumptions, not reported facts.
+"""
+
+COMPARISON_DATE = "2026-09-09"
 
 # Editable inputs — Microsoft, FY ended June 30, 2026
 starting_fcff = 68196.0  # CFO + after-tax cash interest − capex; USD millions
@@ -108,6 +116,7 @@ def verify_training_case():
 
 def main():
     verify_training_case()
+    print(f"Microsoft saved Week 3 DCF — comparison date {COMPARISON_DATE}")
     print_twelve_lines()
     print_sensitivity_grid()
     print_reverse_dcf()

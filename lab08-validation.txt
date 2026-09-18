@@ -1,0 +1,45 @@
+Lab 08 validation — September 9, 2026 comparison
+
+PASS: independent Decimal P/E and DCF arithmetic; all nine sensitivity cells;
+FCFF bridge; Salesforce-only admission; removal leaves no estimate;
+future earnings rejected; reverse DCF solves to $491.65; local links resolve.
+
+Lab 08 — Microsoft comparable-company P/E (AI-drafted peer policy)
+Prices: 2026-09-09; latest public annual GAAP diluted EPS.
+USD per common share. No cash/debt bridge. Sources: lab08-microsoft.md
+ORCL: excluded by peer policy; retained in source table.
+Target MSFT: price=491.65, EPS=17.95
+Target P/E: 27.389972×
+CRM: price=244.16, EPS=7.8
+  P/E: 31.302564×; target implied price: $561.88
+Peer median P/E: 31.302564×
+One valid peer: reference estimate, no range.
+Median-implied price: $561.88
+Leave-one-peer-out (changes computed before rounding):
+  Remove CRM: no estimate; no usable peers remain.
+
+Microsoft saved Week 3 DCF — comparison date 2026-09-09
+FCFF Year 1: 81835.2000
+FCFF Year 2: 94928.8320
+FCFF Year 3: 107269.5802
+FCFF Year 4: 117996.5382
+FCFF Year 5: 126256.2958
+Present Value of Explicit FCFF: 397886.1690
+Terminal Value at Year 5: 2000676.6881
+Present Value of Terminal Value: 1270885.1815
+Enterprise Value: 1668771.3506
+Equity Value: 1705320.3506
+Value per Diluted Share: 228.8099
+PV of Terminal Value as Share of Enterprise Value: 0.7616
+
+Sensitivity grid — value per diluted share ($)
+WACC \ terminal growth | 2.0% | 3.0% | 4.0%
+-------------------------------------------------------
+8.5%                    | 236.59 | 270.78 | 320.17
+9.5%                    | 204.64 | 228.81 | 261.77
+10.5%                   | 180.23 | 198.06 | 221.37
+
+Reverse DCF
+Target share price: $491.65
+Solved uniform shift to Years 1–5 growth: +20.74%
+Held fixed: starting FCFF, WACC, terminal growth, non-operating cash, debt, diluted shares, and the five-year forecast horizon.
