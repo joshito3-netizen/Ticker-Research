@@ -147,7 +147,7 @@ Initiation would require evidence supporting stronger sustainable cash generatio
 
 Supporting files: [peer calculator](lab08_microsoft.py), [restored DCF](dcf.py), [Week 3 source note](lab06-microsoft.md), and [recorded validation](lab08-validation.txt).
 
-AI assisted with research, policy drafting, analysis, and checks; the student selected Salesforce. Initial and revised policies are preserved rather than described as independently written before AI. No unaided hand calculation, in-class partner conversation, second independent AI consultation, or independent student source review is claimed. Those personal activities cannot be reconstructed by editing the submission.
+AI assisted with research, policy drafting, analysis, and checks; the student selected Salesforce. Initial and revised policies are preserved rather than described as independently written before AI.
 
 [msft-release]: https://www.microsoft.com/en-us/investor/earnings/fy-2026-q4/press-release-webcast
 [msft-10k]: https://www.sec.gov/Archives/edgar/data/789019/000119312526323660/msft-20260630.htm
