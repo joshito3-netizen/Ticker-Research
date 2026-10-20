@@ -1,0 +1,39 @@
+Microsoft Project 1 cold-run log
+Run date: 2026-10-19 America/Indiana/Indianapolis
+Working directory: repository root
+
+Fresh environment:
+  python3 -m venv .venv
+  .venv/bin/python -m pip install -r requirements.txt
+Result: PASS; Streamlit 1.66.0 and dependencies installed into isolated .venv.
+
+Analysis and tests:
+  .venv/bin/python analysis.py
+  .venv/bin/python -m unittest discover -s tests -v
+  .venv/bin/python -m py_compile analysis.py app.py
+Result: PASS.
+Visible result: WATCH / DEFER; market $491.65; DCF base $230.21;
+causal range $112.21-$356.33; terminal share 81.0%.
+Tests: 8 run, 8 passed.
+
+Application:
+  .venv/bin/streamlit run app.py --server.headless true --server.port 8502 --browser.gatherUsageStats false
+  curl -I http://127.0.0.1:8502
+Result: PASS; Uvicorn started and local request returned HTTP/1.1 200 OK.
+
+Browser verification:
+  Base page visibly showed bounded percentage controls, WATCH / DEFER, $491.65 market,
+  $230.21 selected-driver DCF, $112-$356 causal range, 81.0% terminal share, scenarios,
+  bridge, and reverse DCF.
+  Loud-failure checkbox produced:
+    MODEL CHECK FAILED: Terminal growth must be below WACC
+  Unchecking restored the valid base case.
+
+First failure and resolution:
+  Initial sandboxed server launch could not bind a local socket (PermissionError).
+  Resolution: reran the same local command with approved local-server permission.
+  The finance engine and tests had already passed; no model logic changed.
+
+Nonblocking note:
+  Streamlit suggested optional Watchdog installation for performance. It is not required
+  for correctness or reproducibility and was not added.

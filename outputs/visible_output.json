@@ -1,0 +1,261 @@
+{
+  "decision": "Should a buy-side committee with no position initiate MSFT?",
+  "as_of": "2026-09-09",
+  "financial_statement_date": "2026-06-30",
+  "evidence_cutoff": "2026-09-09",
+  "currency": "USD",
+  "units": "USD millions except per-share values",
+  "share_basis": "FY2026 weighted-average diluted shares",
+  "recommendation": "WATCH / DEFER",
+  "market_price": 491.65,
+  "dcf_base_per_share": 230.21066205396866,
+  "dcf_scenario_range_per_share": [
+    112.21338154521703,
+    356.33164656642975
+  ],
+  "terminal_value_share": 0.8095808582361295,
+  "reverse_dcf": {
+    "solved": true,
+    "uniform_growth_shift": 0.2061021228895225,
+    "target_price": 491.65,
+    "implied_price": 491.65000000000003,
+    "held_fixed": [
+      "EBITDA margins",
+      "cash and finance-lease investment ratios",
+      "tax rate",
+      "WACC",
+      "terminal growth",
+      "bridge balances",
+      "diluted shares",
+      "five-year horizon"
+    ]
+  },
+  "scenario_values": {
+    "Downside": 112.21338154521703,
+    "Base": 230.21066205396866,
+    "Upside": 356.33164656642975
+  },
+  "wacc_growth_sensitivity": [
+    {
+      "wacc": 0.085,
+      "terminal_growth": 0.02,
+      "per_share": 238.5246038544222
+    },
+    {
+      "wacc": 0.085,
+      "terminal_growth": 0.03,
+      "per_share": 276.29895477880245
+    },
+    {
+      "wacc": 0.085,
+      "terminal_growth": 0.04,
+      "per_share": 330.8619061140183
+    },
+    {
+      "wacc": 0.095,
+      "terminal_growth": 0.02,
+      "per_share": 203.5076093613842
+    },
+    {
+      "wacc": 0.095,
+      "terminal_growth": 0.03,
+      "per_share": 230.21066205396866
+    },
+    {
+      "wacc": 0.095,
+      "terminal_growth": 0.04,
+      "per_share": 266.62391572567486
+    },
+    {
+      "wacc": 0.105,
+      "terminal_growth": 0.02,
+      "per_share": 176.82162204563582
+    },
+    {
+      "wacc": 0.105,
+      "terminal_growth": 0.03,
+      "per_share": 196.51239244919677
+    },
+    {
+      "wacc": 0.105,
+      "terminal_growth": 0.04,
+      "per_share": 222.2618614384688
+    }
+  ],
+  "operating_sensitivity_ranking": [
+    {
+      "driver": "Cash capex / revenue",
+      "per_share_span": 41.07571659135533,
+      "fy2031_ebit_span": 7491.832134711323,
+      "fy2031_fcff_span": 23225.58800167001
+    },
+    {
+      "driver": "Cloud growth",
+      "per_share_span": 27.379247143596928,
+      "fy2031_ebit_span": 43947.60226961115,
+      "fy2031_fcff_span": 17658.115238735278
+    },
+    {
+      "driver": "Finance-lease additions / revenue",
+      "per_share_span": 20.53785829567755,
+      "fy2031_ebit_span": 3745.9160673556034,
+      "fy2031_fcff_span": 11612.794000834925
+    },
+    {
+      "driver": "EBITDA margin",
+      "per_share_span": 17.394571620450193,
+      "fy2031_ebit_span": 12361.977214306127,
+      "fy2031_fcff_span": 9889.581771444879
+    },
+    {
+      "driver": "Productivity growth",
+      "per_share_span": 13.638532803086946,
+      "fy2031_ebit_span": 21384.157317539793,
+      "fy2031_fcff_span": 8713.172898804623
+    }
+  ],
+  "comparable_references": {
+    "policy": "Use or qualify listed operating companies with recurring enterprise-software subscriptions, business-critical workloads, positive annual GAAP diluted EPS public by the comparison date, and compatible USD common-share prices. Qualify differences in mix, growth, capital intensity, fiscal period, and nonrecurring income; exclude companies that fail those economics or definitions.",
+    "comparison_date": "2026-09-09",
+    "target": {
+      "ticker": "MSFT",
+      "decision": "target",
+      "price": 491.65,
+      "diluted_eps": 17.95,
+      "diluted_shares": 7453.0,
+      "revenue": 331839.0,
+      "cash_and_securities": 76843.0,
+      "term_debt": 40294.0,
+      "finance_leases": 66594.0,
+      "fiscal_end": "2026-06-30",
+      "earnings_published": "2026-07-29"
+    },
+    "admitted_peers": [
+      {
+        "ticker": "CRM",
+        "decision": "qualify",
+        "reason": "Recurring enterprise-application subscription economics; qualified because it does not represent Azure infrastructure or Microsoft's consumer mix.",
+        "pe": 31.3025641025641,
+        "ev_revenue": 5.738493919325707,
+        "implied_target_price_pe": 561.8810256410256,
+        "implied_target_price_ev_revenue": 251.47069417618724
+      }
+    ],
+    "excluded_candidates": [
+      {
+        "ticker": "ORCL",
+        "reason": "Retained as a selection-bias audit item; excluded from the narrowed application-focused policy because its infrastructure financing and capital intensity differ materially."
+      }
+    ],
+    "definition_check": "P/E bridges no cash or debt. EV/Revenue uses dated price \u00d7 annual diluted shares + term debt + finance leases \u2212 cash and marketable securities, then applies the peer multiple to target revenue and completes the target enterprise-to-equity bridge.",
+    "limitation": "One qualified peer supplies reference estimates, not a statistical range; annual diluted shares proxy for point-in-time shares and fiscal windows differ."
+  },
+  "forecast_summary": [
+    {
+      "year": 2027,
+      "revenue": 384167.31,
+      "ebit": 180998.38639249996,
+      "net_income": 143052.85471399996,
+      "cfo": 199587.23376443997,
+      "cash_capex": 111408.51989999998,
+      "finance_lease_additions": 28812.54825,
+      "fcff": 46744.16262044,
+      "cash": 61896.60287043998,
+      "total_assets": 918376.6785984479,
+      "total_liabilities": 361497.423884448,
+      "equity": 556879.2547139999
+    },
+    {
+      "year": 2028,
+      "revenue": 440961.33340000006,
+      "ebit": 203763.38922995003,
+      "net_income": 161365.07524545057,
+      "cfo": 230228.7686845048,
+      "cash_capex": 119059.56001800002,
+      "finance_lease_additions": 30867.293338000007,
+      "fcff": 65455.5975978542,
+      "cash": 119860.41725232474,
+      "total_assets": 1096670.9619112774,
+      "total_liabilities": 409272.07995182695,
+      "equity": 687398.8819594505
+    },
+    {
+      "year": 2029,
+      "revenue": 499994.189306,
+      "ebit": 228030.61292026553,
+      "net_income": 181270.0109096568,
+      "cfo": 262328.2492101877,
+      "cash_capex": 124998.5473265,
+      "finance_lease_additions": 32499.622304890003,
+      "fcff": 87284.7763253089,
+      "cash": 197699.30522109644,
+      "total_assets": 1293322.7283893363,
+      "total_liabilities": 457966.91936022905,
+      "equity": 835355.8090291073
+    },
+    {
+      "year": 2030,
+      "revenue": 558988.1630228801,
+      "ebit": 252713.48251837608,
+      "net_income": 201983.65960263507,
+      "cfo": 294781.64919675875,
+      "cash_capex": 128567.27749526243,
+      "finance_lease_additions": 33539.289781372805,
+      "fcff": 111956.05103513355,
+      "cash": 297940.04581926024,
+      "total_assets": 1507435.7760560212,
+      "total_liabilities": 506074.437971479,
+      "equity": 1001361.3380845425
+    },
+    {
+      "year": 2031,
+      "revenue": 618098.8607153066,
+      "ebit": 278052.51411516336,
+      "net_income": 223780.46457961816,
+      "cfo": 327735.1432901481,
+      "cash_capex": 129800.76075021438,
+      "finance_lease_additions": 33995.437339341865,
+      "fcff": 139483.59452235192,
+      "cash": 423237.23016235285,
+      "total_assets": 1739395.757528116,
+      "total_liabilities": 553110.3358549315,
+      "equity": 1186285.4216731847
+    }
+  ],
+  "reversal_trigger": "Re-underwrite for initiation if price enters the model's supported range ($112.21\u2013$356.33) or sourced evidence supports materially higher cloud growth and cash returns without persistent lease/capex intensity.",
+  "monitoring_triggers": [
+    "Intelligent Cloud growth versus cash capex plus new finance-lease assets",
+    "EBIT margin after depreciation and finance-lease interest",
+    "Commercial RPO conversion to revenue and cash",
+    "Finance-lease liabilities and not-yet-commenced datacenter commitments"
+  ],
+  "checks": {
+    "base_year_reconciles": true,
+    "balance_sheet_balances_all_years": true,
+    "cash_ties_all_years": true,
+    "fcff_reconciles_all_years": true
+  },
+  "bridge": {
+    "pv_explicit": 330237.7944980424,
+    "terminal_fcff": 143668.10235802247,
+    "terminal_value": 2210278.49781573,
+    "pv_terminal": 1404030.049790186,
+    "enterprise_value": 1734267.8442882285,
+    "required_operating_cash": 6636.78,
+    "excess_cash": 70206.22,
+    "investment_value": 18174.0,
+    "debt": 40294.0,
+    "finance_leases": 66594.0,
+    "equity_value": 1715760.0642882285,
+    "per_share": 230.21066205396866,
+    "terminal_share": 0.8095808582361295
+  },
+  "limitations": [
+    "Twelve-month committee action uses a long-duration DCF; no near-term price forecast is claimed.",
+    "Forecast drivers are analyst estimates, not management guidance.",
+    "All cash and short-term investments above a 2% operating-cash reserve are treated as excess.",
+    "Half of equity-investment carrying value is recovered; operating leases remain in operating expense and are not separately deducted.",
+    "A September 9 price is from a third-party historical table; filing facts are cross-checked to Microsoft investor relations."
+  ],
+  "generated_at_utc": "2026-10-20T00:22:09.552099+00:00"
+}
