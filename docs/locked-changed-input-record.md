@@ -99,9 +99,11 @@ The recommendation changes without the resulting valuation range approaching or 
 
 ## Post-run result
 
-Actual output change:
-Actual decision effect:
-Prediction matched, partially matched, or failed:
-Failure diagnosis or no-change reason:
-Evidence path:
+Actual output change:The depreciation-rate increase produced the predicted effects in every forecast year. Depreciation expense increased by $3,831.9 million in FY2027, rising to a $5,813.8 million increase in FY2031. EBIT decreased by the same amounts. Tax expense decreased by $766.4 million in FY2027 and $1,139.4 million in FY2031. Net income decreased, while CFO increased by $766.4 million in FY2027 and $1,256.1 million in FY2031. FCFF increased by $766.4 million in FY2027 and $1,162.8 million in FY2031. Ending cash increased by $5,145.2 million by FY2031. Enterprise value increased from $1,734,267.8 million to $1,749,686.7 million, and equity value increased from $1,715,760.1 million to $1,731,179.0 million. Base DCF value increased from $230.21 to $232.28 per diluted share. The causal scenario range increased from $112.21–$356.33 to $113.88–$358.80. Terminal-value share decreased slightly from 81.0% to 80.9%. Revenue, cash capex, and new finance-lease additions remained unchanged. All articulation and reconciliation checks passed.
+
+Actual decision effect:The recommendation remained WATCH / DEFER. The depreciation tax shield increased estimated value, but the changed upside value of $358.80 remained substantially below the $491.65 market price.
+
+Prediction matched, partially matched, or failed:Prediction matched, partially matched, or failed: Matched. Depreciation increased; EBIT, taxes, net income, and EPS decreased; CFO, FCFF, ending cash, enterprise value, equity value, and per-share value increased. The specified independent assumptions remained unchanged, and all model checks passed.
+Failure diagnosis or no-change reason:No model failure occurred. The recommendation did not change because the valuation increase was too small to close the gap between the supported valuation range and the market price.
+Evidence path:outputs/locked-depreciation-base.json; outputs/locked-depreciation-base.md; outputs/locked-depreciation-result.json; outputs/locked-depreciation-result.md
 
