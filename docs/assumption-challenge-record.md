@@ -24,4 +24,4 @@ millions unless stated otherwise.
 
 | Challenger | Date | Challenge | Disposition and evidence |
 |---|---|---|---|
-| [STUDENT TO ENTER PARTNER NAME OR APPROVED IDENTIFIER] | [DATE] | [INSERT EXACT WEEK 5–6 CHALLENGE] | [ACCEPT / QUALIFY / REJECT, WITH SOURCE OR TEST] |
+| Partner B (approved identifier) | 2026-10-01 | Capital spending ranked as the largest sensitivity driver, but could EBITDA margin become the largest driver if the tested ranges changed? The cash-capex path also needed a cited definition and exact sensitivity ranges. | **Accept.** The ranking is now explicitly conditional on the tested ranges. FY2026 cash PP&E additions of $115,948m (34.9% of revenue) trace to Microsoft's FY2026 10-K cash-flow statement; the forecast cash-capex path is labeled an analyst estimate at 29%, 27%, 25%, 23%, and 21%. A separate finance-lease-additions path prevents noncash infrastructure commitments from being hidden. The one-at-a-time record reports the tested ranges and ranks cash capex first only within those ranges. |
