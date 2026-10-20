@@ -7,9 +7,9 @@ The unchanged baseline remains at
 that file. Before final PDF assembly, insert the exact Brightspace-submitted Edition A PDF and
 record its receipt/attempt identifier and timestamp here.
 
-**Brightspace receipt/attempt:** [STUDENT TO ENTER]
+**Brightspace receipt/attempt:** Lab 03 — Project 1 Valuation Edition A — Attempt 1 of 3
 
-**Timestamp:** [STUDENT TO ENTER]
+**Timestamp:** Written September 1, 2026, 2:24 PM–2:41 PM
 
 ## Dated correction addendum — October 19, 2026
 
