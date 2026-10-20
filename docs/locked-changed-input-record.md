@@ -1,7 +1,7 @@
 # Locked Changed-Input Record
 
-Precommit timestamp:10/19/2026 9:14PM
-Pre-run commit hash:[main 2d1ff1c] Record Al-assisted locked-input prediction 
+Precommit timestamp:2026-10-19 9:14 PM EDT
+Pre-run commit hash:2d1ff1c6a0669ee00f8ccc26b502be344dae5127 
 Changed-input result commit: 81e8dd5501b286cfe15042bafe1b3e8ad1657e59
 Committer: Josh Clawson <joshclawson@Joshs-MacBook-Pro-2.local>
 Your name and email address were configured automatically based on your username and hostname. Please check that they are accurate.
@@ -39,7 +39,9 @@ Revenue, EBITDA, capital expenditures, and working capital should not be directl
 Because forecast FCFF should increase, I expect the present value of explicit FCFF, terminal value, enterprise value, equity value, and value per diluted share to increase.
 
 I expect the balance-sheet, cash, PP&E, finance-lease, equity, and FCFF reconciliation checks to 
-continue passing.  ## Variables expected to remain unchanged
+continue passing. 
+
+ ## Variables expected to remain unchanged
 
 I expect the following to remain unchanged:
 
@@ -107,4 +109,5 @@ Actual decision effect:The recommendation remained WATCH / DEFER. The depreciati
 Prediction matched, partially matched, or failed:Prediction matched, partially matched, or failed: Matched. Depreciation increased; EBIT, taxes, net income, and EPS decreased; CFO, FCFF, ending cash, enterprise value, equity value, and per-share value increased. The specified independent assumptions remained unchanged, and all model checks passed.
 Failure diagnosis or no-change reason:No model failure occurred. The recommendation did not change because the valuation increase was too small to close the gap between the supported valuation range and the market price.
 Evidence path:outputs/locked-depreciation-base.json; outputs/locked-depreciation-base.md; outputs/locked-depreciation-result.json; outputs/locked-depreciation-result.md
+
 
