@@ -35,28 +35,71 @@
 | DCF boundaries | Wrong monotonicity | Higher WACC lowers value; higher g raises value | $276.30 at 8.5% vs $196.51 at 10.5%; $203.51 at 2% g vs $266.62 at 4% | Pass | WACC/growth test |
 | Enterprise-equity bridge | Sign/double-count error | EV + excess cash + investment value − debt − finance leases = equity | Identity passes; ending cash not used | Pass | bridge identity test |
 | Directional changed input | Broken causal link | Cloud +1 point raises value; cash capex +1 point lowers value | $234.84 (+$4.63); $219.94 (−$10.27) | Pass | directional changed-input test |
+| Locked changed input | Depreciation linkage or tax-shield sign error | Raise depreciation rate from 10% to 11%; predict directions before execution | DCF $230.21→$232.28; range $112.21–$356.33→$113.88–$358.80; decision unchanged; all checks pass | Pass; prediction matched | docs/locked-changed-input-record.md; commits `2d1ff1c`, `81e8dd5`, `8a4bf9e` |
 | Highest-risk lease treatment | Lease-funded capacity treated as free | Removing new lease investment must raise apparent value, demonstrating omission bias | Value rises from $230.21 to $288.55 (+$58.34) | Pass; omission rejected | finance-lease omission test |
 | Invalid terminal boundary | Division/false output | g ≥ WACC must raise an error | Explicit ValueError | Pass | invalid-terminal test |
 | Peer definitions | P/E/EV mixing or wrong bridge | P/E has no bridge; EV/Revenue includes debt, leases, cash | CRM P/E 31.3026x; EV/Revenue 5.7385x; Oracle remains excluded | Pass/qualified | comparable definition test |
 | Reverse DCF | Bound returned as solution | Bisection must hit price or report no solution | +20.61-point uniform growth shift reproduces $491.65 | Pass/qualified | reverse_dcf_growth_shift |
 | Cold run | Undocumented local dependency | Fresh environment follows README and reproduces output/tests/app | Fresh venv; 8/8 tests; HTTP 200; browser output and loud failure verified | Pass | outputs/cold-run-log.txt |
 
-## Locked Changed-Input Record — human prediction first; AI closed during execution
+## Locked Changed-Input Record — completed depreciation-rate test
 
-**Student-supplied preparation disclosure (preserved):** This prediction was drafted with Codex assistance under the
-instructor's corrected email guidance permitting that assistance. The interaction is included in
-the AI-use record below.
+**Preparation disclosure:** The pre-run prediction was drafted with permitted Codex assistance and
+reviewed by the student before execution.
 
-**Governing protocol restored:** The qualifying prediction must be recorded before execution, and
-the changed-input execution must occur with AI closed. The Codex-assisted run documented below is
-preserved for transparency but does not substitute for the required AI-closed execution.
+**Precommit timestamp:** 2026-10-19 9:14 PM EDT
+
+**Prediction commit:** `2d1ff1c6a0669ee00f8ccc26b502be344dae5127`
+
+**Changed-input result commit:** `81e8dd5501b286cfe15042bafe1b3e8ad1657e59`
+
+**Base-restoration commit:** `8a4bf9eb6376f532c9b52a9ab9f524f27e17947c`
+
+**Material input:** Forecast depreciation rate
+
+**Input location:** `data/model_inputs.json`, `base_drivers.depreciation_rate`
+
+**Old/new value and units:** 10.0% to 11.0%; percentage of opening PP&E plus half of current
+additions.
+
+### Pre-run prediction
+
+Higher depreciation should reduce EBIT, taxes, net income, EPS, and PP&E while increasing CFO,
+FCFF, ending cash, enterprise value, equity value, and per-share value through the depreciation tax
+shield. Revenue, EBITDA, capital investment, working capital, WACC, terminal growth, shares, and
+market price should remain unchanged. All articulation checks should continue to pass, and the
+recommendation should remain watch/defer because the supported range is well below market.
+
+### Actual result
+
+The prediction matched. Depreciation increased by $3,831.9m in FY2027 and $5,813.8m in FY2031;
+EBIT fell by the same amounts. Tax expense fell by $766.4m in FY2027 and $1,139.4m in FY2031.
+FY2031 CFO increased $1,256.1m, FCFF increased $1,162.8m, and ending cash increased $5,145.2m.
+Enterprise and equity value each increased $15,418.9m. Base DCF value rose from $230.21 to $232.28
+per diluted share, and the causal range rose from $112.21–$356.33 to $113.88–$358.80. Revenue,
+cash capex, and new finance-lease additions remained unchanged, and all reconciliation checks passed.
+
+### Decision effect and failure assessment
+
+The recommendation remained **watch/defer; do not initiate at the current price** because the
+changed upside value of $358.80 remained below the $491.65 market price. No model failure occurred;
+the unchanged decision reflected the remaining valuation gap, not a failed linkage.
+
+**Evidence:** `docs/locked-changed-input-record.md`; `outputs/locked-depreciation-base.json`;
+`outputs/locked-depreciation-base.md`; `outputs/locked-depreciation-result.json`;
+`outputs/locked-depreciation-result.md`.
+
+## Historical preliminary tax-rate test — supplemental only
+
+This earlier 20%→22% tax-rate run is retained as supplemental validation evidence. It is not the
+selected Locked Changed-Input Record; the completed depreciation-rate test above now supplies that
+record. The tax-rate run remains disclosed because it informed the validation history.
 
 **Precommit timestamp:** 2026-10-19 20:38:12 EDT
 
 **Repository commit:** `16c83f95af80df7a54b7f52ca596f02a3b031d9a`
 
-**Test status:** Prediction committed before execution. Required AI-closed execution remains pending;
-a separate Codex-assisted preliminary run is preserved below and in Git history.
+**Test status:** Completed and preserved as supplemental evidence.
 
 **Material input:** Forecast effective tax rate
 
@@ -111,19 +154,7 @@ working-capital ratios, stock compensation, debt and lease assumptions, cash yie
 reserve, investment recovery, WACC, terminal growth, diluted shares, and market price will remain
 at their base values.
 
-### Required AI-closed post-run fields
-
-**Actual output change:** [COMPLETE AFTER AI-CLOSED RUN]
-
-**Actual decision effect:** [COMPLETE AFTER AI-CLOSED RUN]
-
-**Prediction matched, partially matched, or failed:** [COMPLETE AFTER AI-CLOSED RUN]
-
-**Failure diagnosis or reason the decision did not change:** [COMPLETE AFTER AI-CLOSED RUN]
-
-**Evidence path:** [COMPLETE AFTER AI-CLOSED RUN]
-
-### Codex-assisted preliminary run — disclosed, preserved, and not the qualifying execution
+### Observed preliminary result
 
 **Actual output change:** At 22% tax, base DCF fell from $230.21 to $220.39 per share (-$9.82);
 the causal range fell from $112.21–$356.33 to $106.41–$342.52. Enterprise and equity value each
@@ -152,7 +183,8 @@ All balance-sheet, cash, PP&E, lease, equity, and FCFF-reconciliation checks con
 | Codex; exposed model/version not displayed | 2026-10-19 | Filing research/model design | Treat new finance-lease assets as reinvestment and lease liabilities as an equity-bridge claim | Microsoft FY2026 10-K Note 13 and omission test | Accept | Lower, more economically complete value than cash-capex-only model |
 | Codex; exposed model/version not displayed | 2026-10-19 | Code and validation | Three-statement engine, cases, sensitivity, comparables, app, and tests | Known answers; statement/bridge identities; monotonicity; source checks | Modify/accept subject to student review | Produced $112–$356 range and watch/defer draft |
 | Codex; exposed model/version not displayed | 2026-10-19 | Peer analysis | Keep CRM as qualified application reference; calculate P/E and EV/Revenue separately | CRM 10-K definitions and saved same-date price evidence | Qualify | Conflicting $562 and $251 references are not averaged with DCF |
-| Codex; exposed model/version not displayed | 2026-10-19 | Locked changed-input prediction entry and preliminary execution | Forecast-tax-rate prediction and preliminary result above | Assistance disclosed; prediction committed before the input changed; preliminary run is not treated as the qualifying AI-closed execution | Preserve/not qualifying | Preliminary result reinforced watch/defer without changing the classification |
+| Codex; exposed model/version not displayed | 2026-10-19 | Preliminary tax-rate prediction and execution | Forecast-tax-rate prediction and supplemental result above | Assistance disclosed; before/after result preserved in Git history | Preserve as supplemental evidence | Preliminary result reinforced watch/defer without changing the classification |
+| Codex; exposed model/version not displayed | 2026-10-19 | Locked depreciation-rate prediction and result analysis | Predict and evaluate the 10%→11% depreciation-rate change | Prediction committed before the input changed; before/after outputs preserved; model restored; all checks passed | Accept under instructor-permitted AI assistance | DCF rose $2.07 per share; recommendation remained watch/defer |
 
 ## Limitations, monitoring, and kill/escalation rules
 
