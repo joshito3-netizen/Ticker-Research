@@ -52,7 +52,8 @@ the prediction and execution is obsolete and has been removed.
 
 **Repository commit:** `16c83f95af80df7a54b7f52ca596f02a3b031d9a`
 
-**Test status:** Prediction recorded before execution; the changed-input run has not been executed.
+**Test status:** Executed after the precommit; prediction matched and the base input was subsequently
+restored after preserving the changed-input state and output in Git history.
 
 **Material input:** Forecast effective tax rate
 
@@ -109,15 +110,24 @@ at their base values.
 
 ### Post-run fields
 
-**Actual output change:** [COMPLETE AFTER RUN]
+**Actual output change:** At 22% tax, base DCF fell from $230.21 to $220.39 per share (-$9.82);
+the causal range fell from $112.21–$356.33 to $106.41–$342.52. Enterprise and equity value each
+fell $73,203.5m. FY2031 FCFF fell $5,561.1m and ending cash fell $23,755.6m. The absolute PV of the
+terminal component fell $55,977.1m, representing 76.5% of the EV decline.
 
-**Actual decision effect:** [COMPLETE AFTER RUN]
+**Actual decision effect:** No classification change: **watch/defer; do not initiate at the current
+price**. The higher tax rate widened the valuation gap to the $491.65 market price.
 
-**Prediction matched, partially matched, or failed:** [COMPLETE AFTER RUN]
+**Prediction matched, partially matched, or failed:** **Matched.** Tax expense rose and net income,
+EPS, CFO, NOPAT, FCFF, ending cash, enterprise value, equity value, and per-share value fell in every
+forecast year or at the valuation level, as applicable. Specified held-constant fields did not move.
 
-**Failure diagnosis or reason the decision did not change:** [COMPLETE AFTER RUN]
+**Failure diagnosis or reason the decision did not change:** No failure. The decision did not change
+because the pre-test upside value was already below market and the higher-tax change reduced values.
+All balance-sheet, cash, PP&E, lease, equity, and FCFF-reconciliation checks continued to pass.
 
-**Evidence path:** [COMPLETE AFTER RUN]
+**Evidence path:** `outputs/locked-tax-rate-test.md`; changed-input run preserved in the post-run Git
+commit recorded with that file.
 
 ## Named AI-use register
 

@@ -8,17 +8,17 @@
   "share_basis": "FY2026 weighted-average diluted shares",
   "recommendation": "WATCH / DEFER",
   "market_price": 491.65,
-  "dcf_base_per_share": 230.21066205396866,
+  "dcf_base_per_share": 220.3886378044987,
   "dcf_scenario_range_per_share": [
-    112.21338154521703,
-    356.33164656642975
+    106.41467074026168,
+    342.51904208477276
   ],
-  "terminal_value_share": 0.8095808582361295,
+  "terminal_value_share": 0.8115597876547231,
   "reverse_dcf": {
     "solved": true,
-    "uniform_growth_shift": 0.2061021228895225,
+    "uniform_growth_shift": 0.22019039543504243,
     "target_price": 491.65,
-    "implied_price": 491.65000000000003,
+    "implied_price": 491.65000000000026,
     "held_fixed": [
       "EBITDA margins",
       "cash and finance-lease investment ratios",
@@ -31,87 +31,87 @@
     ]
   },
   "scenario_values": {
-    "Downside": 112.21338154521703,
-    "Base": 230.21066205396866,
-    "Upside": 356.33164656642975
+    "Downside": 106.41467074026168,
+    "Base": 220.3886378044987,
+    "Upside": 342.51904208477276
   },
   "wacc_growth_sensitivity": [
     {
       "wacc": 0.085,
       "terminal_growth": 0.02,
-      "per_share": 238.5246038544222
+      "per_share": 228.3609491753654
     },
     {
       "wacc": 0.085,
       "terminal_growth": 0.03,
-      "per_share": 276.29895477880245
+      "per_share": 264.62928022987336
     },
     {
       "wacc": 0.085,
       "terminal_growth": 0.04,
-      "per_share": 330.8619061140183
+      "per_share": 317.0168695308296
     },
     {
       "wacc": 0.095,
       "terminal_growth": 0.02,
-      "per_share": 203.5076093613842
+      "per_share": 194.75020507115013
     },
     {
       "wacc": 0.095,
       "terminal_growth": 0.03,
-      "per_share": 230.21066205396866
+      "per_share": 220.3886378044987
     },
     {
       "wacc": 0.095,
       "terminal_growth": 0.04,
-      "per_share": 266.62391572567486
+      "per_share": 255.35013698633782
     },
     {
       "wacc": 0.105,
       "terminal_growth": 0.02,
-      "per_share": 176.82162204563582
+      "per_share": 169.1379999640156
     },
     {
       "wacc": 0.105,
       "terminal_growth": 0.03,
-      "per_share": 196.51239244919677
+      "per_share": 188.04372202775943
     },
     {
       "wacc": 0.105,
       "terminal_growth": 0.04,
-      "per_share": 222.2618614384688
+      "per_share": 212.766589341886
     }
   ],
   "operating_sensitivity_ranking": [
     {
       "driver": "Cash capex / revenue",
-      "per_share_span": 41.07571659135533,
+      "per_share_span": 40.83464534537836,
       "fy2031_ebit_span": 7491.832134711323,
-      "fy2031_fcff_span": 23225.58800167001
+      "fy2031_fcff_span": 23075.751358975816
     },
     {
       "driver": "Cloud growth",
-      "per_share_span": 27.379247143596928,
+      "per_share_span": 25.982601627769412,
       "fy2031_ebit_span": 43947.60226961115,
-      "fy2031_fcff_span": 17658.115238735278
+      "fy2031_fcff_span": 16779.16319334309
     },
     {
       "driver": "Finance-lease additions / revenue",
-      "per_share_span": 20.53785829567755,
+      "per_share_span": 20.41732267268921,
       "fy2031_ebit_span": 3745.9160673556034,
-      "fy2031_fcff_span": 11612.794000834925
+      "fy2031_fcff_span": 11537.875679487901
     },
     {
       "driver": "EBITDA margin",
-      "per_share_span": 17.394571620450193,
+      "per_share_span": 16.959707329938993,
       "fy2031_ebit_span": 12361.977214306127,
-      "fy2031_fcff_span": 9889.581771444879
+      "fy2031_fcff_span": 9642.342227158792
     },
     {
       "driver": "Productivity growth",
-      "per_share_span": 13.638532803086946,
+      "per_share_span": 12.948977249356204,
       "fy2031_ebit_span": 21384.157317539793,
-      "fy2031_fcff_span": 8713.172898804623
+      "fy2031_fcff_span": 8285.48975245384
     }
   ],
   "comparable_references": {
@@ -155,74 +155,74 @@
       "year": 2027,
       "revenue": 384167.31,
       "ebit": 180998.38639249996,
-      "net_income": 143052.85471399996,
-      "cfo": 199587.23376443997,
+      "net_income": 139476.53334614995,
+      "cfo": 196010.91239658996,
       "cash_capex": 111408.51989999998,
       "finance_lease_additions": 28812.54825,
-      "fcff": 46744.16262044,
-      "cash": 61896.60287043998,
-      "total_assets": 918376.6785984479,
+      "fcff": 43124.194892589985,
+      "cash": 58320.281502589976,
+      "total_assets": 914800.357230598,
       "total_liabilities": 361497.423884448,
-      "equity": 556879.2547139999
+      "equity": 553302.93334615
     },
     {
       "year": 2028,
       "revenue": 440961.33340000006,
       "ebit": 203763.38922995003,
-      "net_income": 161365.07524545057,
-      "cfo": 230228.7686845048,
+      "net_income": 157247.26244430663,
+      "cfo": 226110.95588336082,
       "cash_capex": 119059.56001800002,
       "finance_lease_additions": 30867.293338000007,
-      "fcff": 65455.5975978542,
-      "cash": 119860.41725232474,
-      "total_assets": 1096670.9619112774,
+      "fcff": 61380.329813255215,
+      "cash": 112166.28308333077,
+      "total_assets": 1088976.8277422835,
       "total_liabilities": 409272.07995182695,
-      "equity": 687398.8819594505
+      "equity": 679704.7477904566
     },
     {
       "year": 2029,
       "revenue": 499994.189306,
       "ebit": 228030.61292026553,
-      "net_income": 181270.0109096568,
-      "cfo": 262328.2492101877,
+      "net_income": 176558.2178973609,
+      "cfo": 257616.4561978918,
       "cash_capex": 124998.5473265,
       "finance_lease_additions": 32499.622304890003,
-      "fcff": 87284.7763253089,
-      "cash": 197699.30522109644,
-      "total_assets": 1293322.7283893363,
+      "fcff": 82724.1640669036,
+      "cash": 185293.37803980656,
+      "total_assets": 1280916.8012080465,
       "total_liabilities": 457966.91936022905,
-      "equity": 835355.8090291073
+      "equity": 822949.8818478176
     },
     {
       "year": 2030,
       "revenue": 558988.1630228801,
       "ebit": 252713.48251837608,
-      "net_income": 201983.65960263507,
-      "cfo": 294781.64919675875,
+      "net_income": 196643.769416527,
+      "cfo": 289441.7590106507,
       "cash_capex": 128567.27749526243,
       "finance_lease_additions": 33539.289781372805,
-      "fcff": 111956.05103513355,
-      "cash": 297940.04581926024,
-      "total_assets": 1507435.7760560212,
+      "fcff": 106901.78138476606,
+      "cash": 280194.2284518623,
+      "total_assets": 1489689.9586886233,
       "total_liabilities": 506074.437971479,
-      "equity": 1001361.3380845425
+      "equity": 983615.5207171446
     },
     {
       "year": 2031,
       "revenue": 618098.8607153066,
       "ebit": 278052.51411516336,
-      "net_income": 223780.46457961816,
-      "cfo": 327735.1432901481,
+      "net_income": 217770.7008387306,
+      "cfo": 321725.37954926054,
       "cash_capex": 129800.76075021438,
       "finance_lease_additions": 33995.437339341865,
-      "fcff": 139483.59452235192,
-      "cash": 423237.23016235285,
-      "total_assets": 1739395.757528116,
+      "fcff": 133922.54424004868,
+      "cash": 399481.6490540673,
+      "total_assets": 1715640.1764198304,
       "total_liabilities": 553110.3358549315,
-      "equity": 1186285.4216731847
+      "equity": 1162529.8405648991
     }
   ],
-  "reversal_trigger": "Re-underwrite for initiation if price enters the model's supported range ($112.21\u2013$356.33) or sourced evidence supports materially higher cloud growth and cash returns without persistent lease/capex intensity.",
+  "reversal_trigger": "Re-underwrite for initiation if price enters the model's supported range ($106.41\u2013$342.52) or sourced evidence supports materially higher cloud growth and cash returns without persistent lease/capex intensity.",
   "monitoring_triggers": [
     "Intelligent Cloud growth versus cash capex plus new finance-lease assets",
     "EBIT margin after depreciation and finance-lease interest",
@@ -236,19 +236,19 @@
     "fcff_reconciles_all_years": true
   },
   "bridge": {
-    "pv_explicit": 330237.7944980424,
-    "terminal_fcff": 143668.10235802247,
-    "terminal_value": 2210278.49781573,
-    "pv_terminal": 1404030.049790186,
-    "enterprise_value": 1734267.8442882285,
+    "pv_explicit": 313011.3089507859,
+    "terminal_fcff": 137940.22056725013,
+    "terminal_value": 2122157.2394961556,
+    "pv_terminal": 1348052.988606143,
+    "enterprise_value": 1661064.2975569288,
     "required_operating_cash": 6636.78,
     "excess_cash": 70206.22,
     "investment_value": 18174.0,
     "debt": 40294.0,
     "finance_leases": 66594.0,
-    "equity_value": 1715760.0642882285,
-    "per_share": 230.21066205396866,
-    "terminal_share": 0.8095808582361295
+    "equity_value": 1642556.5175569288,
+    "per_share": 220.3886378044987,
+    "terminal_share": 0.8115597876547231
   },
   "limitations": [
     "Twelve-month committee action uses a long-duration DCF; no near-term price forecast is claimed.",
@@ -257,5 +257,5 @@
     "Half of equity-investment carrying value is recovered; operating leases remain in operating expense and are not separately deducted.",
     "A September 9 price is from a third-party historical table; filing facts are cross-checked to Microsoft investor relations."
   ],
-  "generated_at_utc": "2026-10-20T00:22:09.552099+00:00"
+  "generated_at_utc": "2026-10-20T00:40:25.349396+00:00"
 }

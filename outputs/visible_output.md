@@ -2,40 +2,40 @@
 
 **Decision:** WATCH / DEFER as of **2026-09-09**.
 **Committee question:** Should a buy-side committee with no position initiate MSFT?
-**Market price:** $491.65; **DCF base:** $230.21; **causal scenario range:** $112.21–$356.33 per diluted share.
+**Market price:** $491.65; **DCF base:** $220.39; **causal scenario range:** $106.41–$342.52 per diluted share.
 **Share basis:** FY2026 weighted-average diluted shares. Financial statements dated 2026-06-30; evidence cutoff 2026-09-09.
 
 ## Scenario output
 
 | Case | Value per diluted share |
 |---|---:|
-| Downside | $112.21 |
-| Base | $230.21 |
-| Upside | $356.33 |
+| Downside | $106.41 |
+| Base | $220.39 |
+| Upside | $342.52 |
 
-Terminal value is 81.0% of enterprise value.
+Terminal value is 81.2% of enterprise value.
 
 ## Five-year forecast summary
 
 | FY | Revenue | EBIT | Net income | CFO | Cash capex | New finance leases | Economic FCFF | Ending cash |
 |---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2027 | 384,167.3 | 180,998.4 | 143,052.9 | 199,587.2 | 111,408.5 | 28,812.5 | 46,744.2 | 61,896.6 |
-| 2028 | 440,961.3 | 203,763.4 | 161,365.1 | 230,228.8 | 119,059.6 | 30,867.3 | 65,455.6 | 119,860.4 |
-| 2029 | 499,994.2 | 228,030.6 | 181,270.0 | 262,328.2 | 124,998.5 | 32,499.6 | 87,284.8 | 197,699.3 |
-| 2030 | 558,988.2 | 252,713.5 | 201,983.7 | 294,781.6 | 128,567.3 | 33,539.3 | 111,956.1 | 297,940.0 |
-| 2031 | 618,098.9 | 278,052.5 | 223,780.5 | 327,735.1 | 129,800.8 | 33,995.4 | 139,483.6 | 423,237.2 |
+| 2027 | 384,167.3 | 180,998.4 | 139,476.5 | 196,010.9 | 111,408.5 | 28,812.5 | 43,124.2 | 58,320.3 |
+| 2028 | 440,961.3 | 203,763.4 | 157,247.3 | 226,111.0 | 119,059.6 | 30,867.3 | 61,380.3 | 112,166.3 |
+| 2029 | 499,994.2 | 228,030.6 | 176,558.2 | 257,616.5 | 124,998.5 | 32,499.6 | 82,724.2 | 185,293.4 |
+| 2030 | 558,988.2 | 252,713.5 | 196,643.8 | 289,441.8 | 128,567.3 | 33,539.3 | 106,901.8 | 280,194.2 |
+| 2031 | 618,098.9 | 278,052.5 | 217,770.7 | 321,725.4 | 129,800.8 | 33,995.4 | 133,922.5 | 399,481.6 |
 
 
 ## Enterprise-to-equity bridge
 
 | Item | USD millions |
 |---|---:|
-| Enterprise value | 1,734,267.8 |
+| Enterprise value | 1,661,064.3 |
 | Add: excess cash and short-term investments | 70,206.2 |
 | Add: 50% recovery of equity investments | 18,174.0 |
 | Less: term debt | (40,294.0) |
 | Less: finance-lease liabilities | (66,594.0) |
-| Equity value | 1,715,760.1 |
+| Equity value | 1,642,556.5 |
 
 ## Comparable references — kept separate from DCF
 
@@ -51,15 +51,15 @@ The peer methods disagree because P/E transfers the market price of accounting e
 
 | Rank | Driver | Value/share span | FY2031 EBIT span | FY2031 FCFF span |
 |---:|---|---:|---:|---:|
-| 1 | Cash capex / revenue | $41.08 | 7,491.8 | 23,225.6 |
-| 2 | Cloud growth | $27.38 | 43,947.6 | 17,658.1 |
-| 3 | Finance-lease additions / revenue | $20.54 | 3,745.9 | 11,612.8 |
-| 4 | EBITDA margin | $17.39 | 12,362.0 | 9,889.6 |
-| 5 | Productivity growth | $13.64 | 21,384.2 | 8,713.2 |
+| 1 | Cash capex / revenue | $40.83 | 7,491.8 | 23,075.8 |
+| 2 | Cloud growth | $25.98 | 43,947.6 | 16,779.2 |
+| 3 | Finance-lease additions / revenue | $20.42 | 3,745.9 | 11,537.9 |
+| 4 | EBITDA margin | $16.96 | 12,362.0 | 9,642.3 |
+| 5 | Productivity growth | $12.95 | 21,384.2 | 8,285.5 |
 
 ## Recommendation conditions
 
-Re-underwrite for initiation if price enters the model's supported range ($112.21–$356.33) or sourced evidence supports materially higher cloud growth and cash returns without persistent lease/capex intensity.
+Re-underwrite for initiation if price enters the model's supported range ($106.41–$342.52) or sourced evidence supports materially higher cloud growth and cash returns without persistent lease/capex intensity.
 
 Monitor:
 
