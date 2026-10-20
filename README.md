@@ -42,7 +42,8 @@ interface. No credentials or network calls are needed at run time.
 
 ## Repository map
 
-- `project-1-edition-a-microsoft.md` — unchanged Edition A baseline; never overwrite it.
+- `project-1-edition-a-brightspace-verbatim.md` — unchanged Brightspace Edition A response; never overwrite it.
+- `project-1-edition-a-microsoft.md` — later expanded local note; not the Brightspace baseline.
 - `data/model_inputs.json` — source-dated filing facts, assumptions, bounds, and peer policy.
 - `analysis.py` — three-statement forecast, FCFF DCF, bridge, cases, reverse DCF, comparables,
   checks, and visible-output export.
