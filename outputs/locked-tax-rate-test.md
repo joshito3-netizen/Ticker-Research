@@ -1,4 +1,8 @@
-# Locked Changed-Input Test Evidence — Forecast Tax Rate
+# Preliminary Changed-Input Test Evidence — Forecast Tax Rate
+
+**Status:** This run was executed with Codex assistance. It is preserved for transparency but does
+not qualify as the required AI-closed Locked Changed-Input execution. The student-supplied prediction
+remains committed in `docs/validation-and-ai-use.md` and must be tested again with AI closed.
 
 ## Run identity
 

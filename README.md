@@ -87,6 +87,6 @@ the equity bridge separately deducts opening finance-lease liabilities.
 - One qualified peer provides reference estimates, not a statistical peer range.
 - Terminal value remains material; accounting agreement validates mechanics, not forecast truth.
 
-See `docs/validation-and-ai-use.md` for test evidence, AI-use disclosure, and the complete Locked
-Changed-Input Record. Detailed before/after evidence is preserved in
-`outputs/locked-tax-rate-test.md`.
+See `docs/validation-and-ai-use.md` for test evidence, AI-use disclosure, and the committed Locked
+Changed-Input prediction. The required AI-closed execution remains pending. A disclosed,
+non-qualifying preliminary before/after run is preserved in `outputs/locked-tax-rate-test.md`.

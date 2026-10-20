@@ -41,19 +41,22 @@
 | Reverse DCF | Bound returned as solution | Bisection must hit price or report no solution | +20.61-point uniform growth shift reproduces $491.65 | Pass/qualified | reverse_dcf_growth_shift |
 | Cold run | Undocumented local dependency | Fresh environment follows README and reproduces output/tests/app | Fresh venv; 8/8 tests; HTTP 200; browser output and loud failure verified | Pass | outputs/cold-run-log.txt |
 
-## Locked Changed-Input Record
+## Locked Changed-Input Record — human prediction first; AI closed during execution
 
-**Preparation disclosure:** This prediction was drafted with Codex assistance under the
+**Student-supplied preparation disclosure (preserved):** This prediction was drafted with Codex assistance under the
 instructor's corrected email guidance permitting that assistance. The interaction is included in
-the AI-use record below. The prior instruction in this document that prohibited AI assistance for
-the prediction and execution is obsolete and has been removed.
+the AI-use record below.
+
+**Governing protocol restored:** The qualifying prediction must be recorded before execution, and
+the changed-input execution must occur with AI closed. The Codex-assisted run documented below is
+preserved for transparency but does not substitute for the required AI-closed execution.
 
 **Precommit timestamp:** 2026-10-19 20:38:12 EDT
 
 **Repository commit:** `16c83f95af80df7a54b7f52ca596f02a3b031d9a`
 
-**Test status:** Executed after the precommit; prediction matched and the base input was subsequently
-restored after preserving the changed-input state and output in Git history.
+**Test status:** Prediction committed before execution. Required AI-closed execution remains pending;
+a separate Codex-assisted preliminary run is preserved below and in Git history.
 
 **Material input:** Forecast effective tax rate
 
@@ -108,7 +111,19 @@ working-capital ratios, stock compensation, debt and lease assumptions, cash yie
 reserve, investment recovery, WACC, terminal growth, diluted shares, and market price will remain
 at their base values.
 
-### Post-run fields
+### Required AI-closed post-run fields
+
+**Actual output change:** [COMPLETE AFTER AI-CLOSED RUN]
+
+**Actual decision effect:** [COMPLETE AFTER AI-CLOSED RUN]
+
+**Prediction matched, partially matched, or failed:** [COMPLETE AFTER AI-CLOSED RUN]
+
+**Failure diagnosis or reason the decision did not change:** [COMPLETE AFTER AI-CLOSED RUN]
+
+**Evidence path:** [COMPLETE AFTER AI-CLOSED RUN]
+
+### Codex-assisted preliminary run — disclosed, preserved, and not the qualifying execution
 
 **Actual output change:** At 22% tax, base DCF fell from $230.21 to $220.39 per share (-$9.82);
 the causal range fell from $112.21–$356.33 to $106.41–$342.52. Enterprise and equity value each
@@ -137,7 +152,7 @@ All balance-sheet, cash, PP&E, lease, equity, and FCFF-reconciliation checks con
 | Codex; exposed model/version not displayed | 2026-10-19 | Filing research/model design | Treat new finance-lease assets as reinvestment and lease liabilities as an equity-bridge claim | Microsoft FY2026 10-K Note 13 and omission test | Accept | Lower, more economically complete value than cash-capex-only model |
 | Codex; exposed model/version not displayed | 2026-10-19 | Code and validation | Three-statement engine, cases, sensitivity, comparables, app, and tests | Known answers; statement/bridge identities; monotonicity; source checks | Modify/accept subject to student review | Produced $112–$356 range and watch/defer draft |
 | Codex; exposed model/version not displayed | 2026-10-19 | Peer analysis | Keep CRM as qualified application reference; calculate P/E and EV/Revenue separately | CRM 10-K definitions and saved same-date price evidence | Qualify | Conflicting $562 and $251 references are not averaged with DCF |
-| Codex; exposed model/version not displayed | 2026-10-19 | Locked changed-input prediction drafting and record entry | Forecast-tax-rate prediction above | Assistance disclosed under the instructor's corrected email guidance; prediction committed before changing the input or running the test | Accept/pending test | Expected to reinforce watch/defer without changing the classification |
+| Codex; exposed model/version not displayed | 2026-10-19 | Locked changed-input prediction entry and preliminary execution | Forecast-tax-rate prediction and preliminary result above | Assistance disclosed; prediction committed before the input changed; preliminary run is not treated as the qualifying AI-closed execution | Preserve/not qualifying | Preliminary result reinforced watch/defer without changing the classification |
 
 ## Limitations, monitoring, and kill/escalation rules
 
