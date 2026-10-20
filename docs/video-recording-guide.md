@@ -3,7 +3,7 @@
 ## Video 1 — research evolution, maximum 3:00
 
 - Show the unchanged Edition A and receipt.
-- Explain the June 30 look-ahead correction and September 9 cutoff.
+- Explain that Edition A used September 1 after the filing was public, and Edition B uses the September 9 cutoff to align with the saved Week 3/4 market work.
 - Show the A-to-B table: watch/defer remained, but the evidence became decision-ready.
 - AI-output check: Codex identified finance leases as missing from the simple DCF; show Note 13
   and the omission test; disposition: accepted after correction and independent filing check.
