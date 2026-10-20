@@ -83,7 +83,7 @@
     "finance_lease_addition_ratio": [0.075, 0.070, 0.065, 0.060, 0.055],
     "depreciation_rate": 0.10,
     "amortization": [3500.0, 3000.0, 2500.0, 2000.0, 1600.0],
-    "tax_rate": 0.22,
+    "tax_rate": 0.20,
     "stock_compensation_ratio": 0.0374,
     "finance_lease_principal_rate": 0.0644,
     "finance_lease_interest_rate": 0.045,

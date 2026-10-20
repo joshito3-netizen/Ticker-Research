@@ -3,6 +3,7 @@
 ## Run identity
 
 - Prediction/pre-run commit: `16c83f95af80df7a54b7f52ca596f02a3b031d9a`
+- Changed-input result commit: `0fbb8eb5543ed2cd6c721a092d0e5ce64ed81716`
 - Prediction timestamp: 2026-10-19 20:38:12 EDT
 - Execution timestamp: 2026-10-19 20:40:50 EDT
 - Input changed: `data/model_inputs.json`, `base_drivers.tax_rate`

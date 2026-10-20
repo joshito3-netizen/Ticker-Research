@@ -126,8 +126,8 @@ forecast year or at the valuation level, as applicable. Specified held-constant 
 because the pre-test upside value was already below market and the higher-tax change reduced values.
 All balance-sheet, cash, PP&E, lease, equity, and FCFF-reconciliation checks continued to pass.
 
-**Evidence path:** `outputs/locked-tax-rate-test.md`; changed-input run preserved in the post-run Git
-commit recorded with that file.
+**Evidence path:** `outputs/locked-tax-rate-test.md`; changed-input run preserved in Git commit
+`0fbb8eb5543ed2cd6c721a092d0e5ce64ed81716`.
 
 ## Named AI-use register
 
