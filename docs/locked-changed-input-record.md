@@ -1,7 +1,17 @@
 # Locked Changed-Input Record
 
 Precommit timestamp:10/19/2026 9:14PM
-Pre-run commit hash:
+Pre-run commit hash:[main 2d1ff1c] Record Al-assisted locked-input prediction
+Committer: Josh Clawson <joshclawson@Joshs-MacBook-Pro-2.local>
+Your name and email address were configured automatically based on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the following command and follow the instructions in your editor to edit your configuration file:
+git config --global --edit
+After doing this, you may fix the identity used for this commit with:
+git commit --amend --reset-author
+1 file changed, 97 insertions (+)
+create mode 100644 docs/locked-changed-input-record.md
+2d1ff1c6a0669ee00f8ccc26b502be344dae5127
+(base) joshclawson@Joshs-MacBook-Pro-2 Ticker-Research %
 Material input: Forecast depreciation rate
 Input location: data/model_inputs.json, base_drivers.depreciation_rate
 Old value: 10.0%
