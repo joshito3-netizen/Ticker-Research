@@ -49,9 +49,9 @@ A statement that data were “cleaned” is not a data card. Cleaning describes 
 
 ## Partner attack
 
-**Field challenged:** publication date.
+**Partner's challenge:** I trust the publication timing least. The card says DGS10 is available about one business day later, but how do you know the historical rate was not available to trade on the observation date itself?
 
-The 30 September 2026 ALFRED view ended at 29 September = 5.26, so the app provides direct evidence of a one-business-day availability lag rather than same-day knowledge. The FRED page also showed 27 October = 4.99 as updated on 28 October, which independently supports that timing rule.
+**My response:** The 30 September 2026 ALFRED view ended at 29 September = 5.26, so the app directly shows that the 30 September rate was not yet knowable and that I need a one-business-day lag. The FRED page also showed 27 October = 4.99 as updated on 28 October, so both the archived vintage and the live source support the same rule.
 
 ## My call
 
