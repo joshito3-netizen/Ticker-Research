@@ -39,6 +39,18 @@ def main():
 
     st.subheader(f"{analysis['ticker']} — {analysis['company']}")
     rows = analysis["rows"]
+
+    st.subheader("Owner earnings and net income (USD millions)")
+    chart_data = pd.DataFrame(
+        {
+            "Fiscal year end": [row["fiscal_year_end"] for row in rows],
+            "Owner earnings": [row["owner_earnings"] for row in rows],
+            "Net income": [row["net_income"] for row in rows],
+        }
+    ).set_index("Fiscal year end")
+    st.line_chart(chart_data)
+
+    st.subheader("Five fiscal years")
     st.dataframe(pd.DataFrame([{"FY end": r["fiscal_year_end"], "Net income": money(r["net_income"]),
         "Operating cash flow": money(r["operating_cash_flow"]), "Equity": money(r["equity"]),
         "Liabilities": money(r["liabilities"]), "Current assets": money(r["current_assets"]),
